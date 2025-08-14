@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz • Mechanics</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+</head>
+<body>
+  <header class="site">
+    <div class="container">
+      <div class="brand">
+        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
+        <div>
+          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
+          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="top">
+    <div class="container navwrap">
+      <a href="index.html">Home</a>
+      <a href="laws-of-motion.html">Laws of Motion</a>
+      <a href="inclined-planes.html">Inclined Planes</a>
+      <a href="pulley-system.html">Pulley System</a>
+      <a href="forces.html">Forces</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="container layout">
+    
+<main class="card">
+  <h2>Quick Quiz (5 Questions)</h2>
+  <p>Answer the questions below and click <em>Grade Quiz</em> to see your score instantly.</p>
+
+  <form id="quiz-form">
+    <fieldset class="row">
+      <legend>Q1. Which Newton law links net force to acceleration?</legend>
+      <label><input type="radio" name="q1" value="1st"> First law</label>
+      <label><input type="radio" name="q1" value="2nd"> Second law</label>
+      <label><input type="radio" name="q1" value="3rd"> Third law</label>
+    </fieldset>
+
+    <div class="row">
+      <label>Q2. On a smooth 30° incline, what is <em>sin 30° × g</em> (g = 9.8)? Enter the numerical value of acceleration (m/s²).</label>
+      <input type="number" step="0.1" name="q2" placeholder="e.g., 4.9">
+    </div>
+
+    <fieldset class="row">
+      <legend>Q3. In an Atwood machine, which forces act on each hanging mass? (Select all that apply.)</legend>
+      <label><input type="checkbox" name="q3" value="tension"> Tension</label>
+      <label><input type="checkbox" name="q3" value="spring"> Spring force</label>
+      <label><input type="checkbox" name="q3" value="weight"> Weight</label>
+      <label><input type="checkbox" name="q3" value="drag"> Air drag (assume negligible)</label>
+    </fieldset>
+
+    <fieldset class="row">
+      <legend>Q4. For a block on a rough incline moving up-slope, the friction acts…</legend>
+      <label><input type="radio" name="q4" value="up-slope"> up the slope</label>
+      <label><input type="radio" name="q4" value="down-slope"> down the slope</label>
+    </fieldset>
+
+    <fieldset class="row">
+      <legend>Q5. True or False: Action and reaction forces act on the same body.</legend>
+      <label><input type="radio" name="q5" value="true"> False</label>
+      <label><input type="radio" name="q5" value="false"> True</label>
+    </fieldset>
+
+    <button class="btn">Grade Quiz</button>
+    <div id="quiz-result" class="quiz-result"></div>
+  </form>
+</main>
+
+    <aside class="card">
+      <h3>Quick Search</h3>
+      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
+      <ul id="search-results" class="search-results"></ul>
+      <hr>
+      <h3>Downloads</h3>
+      <ul>
+        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
+        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
+      </ul>
+      <p class="small">External links open in a new tab.</p>
+    </aside>
+  </div>
+
+  <footer class="site">
+    <div class="container">
+      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
+      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
