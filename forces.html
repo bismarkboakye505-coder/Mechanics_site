@@ -1,89 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forces • Mechanics</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forces — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.JPG">
+  <link rel="stylesheet" href="assets/style3.css" />
 </head>
-<body>
-  <header class="site">
-    <div class="container">
-      <div class="brand">
-        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
-        <div>
-          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
-          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
-        </div>
+<body data-page="forces">
+  <header class="site-header-mechanics">
+  <div class="header-inner">
+    <img src="assets/crest.JPG" alt="UEW Logo" class="header-logo">
+    <h1 class="site-title">MECHANICS</h1>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="laws-of-motion.html">Laws</a>
+    <a href="inclined-planes.html">Inclined</a>
+    <a href="pulley-system.html">Pulley</a>
+    <a href="forces.html">Forces</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="videos.html">Videos</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+  <main class="card fade-in">
+    <h2>Forces</h2>
+    <p>A force is a push or pull that can change the state of motion of a body. It has both magnitude and direction, and is measured in Newtons (N).</p>
+
+    <h3>Types of Forces</h3>
+    <h4>Contact Forces</h4>
+    <ul>
+      <li><strong>Friction:</strong> opposes motion between surfaces.</li>
+      <li><strong>Normal Reaction:</strong> force perpendicular to a surface.</li>
+      <li><strong>Tension:</strong> pulling force in strings or ropes.</li>
+      <li><strong>Applied Force:</strong> push or pull by an agent.</li>
+    </ul>
+
+    <h4>Non-Contact Forces</h4>
+    <ul>
+      <li><strong>Gravitational Force:</strong> attraction between masses, weight = mg.</li>
+      <li><strong>Electrostatic Force:</strong> between charged particles.</li>
+      <li><strong>Magnetic Force:</strong> due to magnetic fields.</li>
+    </ul>
+<div class="card">
+  <h2>ILLUSTRATIONS OF FORCES</h2>
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="assets/force1.jpg" alt="force Example 1">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/force2.jpg" alt="force Example 2">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/force.jpg" alt="force Example 3">
+    </div>
+
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+    <h3>Free-Body Diagrams (FBD)</h3>
+    <ol>
+      <li>Isolate the object of interest.</li>
+      <li>Show all forces acting on it as arrows from the center.</li>
+      <li>Resolve angled forces into components (Fx, Fy).</li>
+      <li>Apply ΣF = ma along each axis.</li>
+    </ol>
+
+    <h3>Worked Examples</h3>
+    <div class="grid-2">
+      <div class="card">
+        <strong>Example 1:</strong><br>
+        A 10 kg block pulled with 40 N horizontally, friction 10 N.<br>
+        Net force = 30 N, a = F/m = 3 m/s².
+      </div>
+      <div class="card">
+        <strong>Example 2:</strong><br>
+        Three forces in equilibrium form a closed triangle. ΣF = 0.
       </div>
     </div>
-  </header>
 
-  <nav class="top">
-    <div class="container navwrap">
-      <a href="index.html">Home</a>
-      <a href="laws-of-motion.html">Laws of Motion</a>
-      <a href="inclined-planes.html">Inclined Planes</a>
-      <a href="pulley-system.html">Pulley System</a>
-      <a href="forces.html">Forces</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="assignments.html">Assignments</a>
-      <a href="login.html">Login</a>
+    <h3>Interactive Calculator</h3>
+    <div class="card">
+      <p>Resultant of two forces P and Q at angle θ:</p>
+      <label>P (N): <input id="fP" type="number" value="10"></label>
+      <label>Q (N): <input id="fQ" type="number" value="15"></label>
+      <label>θ (deg): <input id="fTheta" type="number" value="60"></label>
+      <button class="btn" id="fBtn">Compute Resultant</button>
+      <div id="fOut" class="quiz-result"></div>
     </div>
-  </nav>
 
-  <div class="container layout">
+    <h3>Video Lesson</h3>
+    <video controls width="55%">
+      <source src="assets/videos/forcevid.mp4" type="video/mp4">
+      
+    </video>
     
-<main class="card fade-in">
-  <h2>Forces & Free‑Body Diagrams</h2>
-  <p>Common forces in Mechanics include weight (<em>mg</em>), normal reaction, tension, friction, thrust and drag. A <em>free‑body diagram</em> (FBD) shows all external forces acting on a body.</p>
+  </main>
 
-  <div class="grid-2">
-    <div class="card">
-      <h3>Drawing an FBD</h3>
-      <ol>
-        <li>Isolate the body.</li>
-        <li>Show weight acting at center of mass.</li>
-        <li>Add normal reaction at contact surfaces.</li>
-        <li>Add friction opposing relative motion.</li>
-        <li>Add applied forces and tension(s).</li>
-      </ol>
-    </div>
-    <div class="card">
-      <h3>Equilibrium</h3>
-      <p>For equilibrium: <code class="inline">ΣF_x = 0</code> and <code class="inline">ΣF_y = 0</code>, and for rigid bodies, <code class="inline">Στ = 0</code>.</p>
-    </div>
-  </div>
-
-  <div class="figure">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Friction.svg/640px-Friction.svg.png" alt="Forces diagram">
-    <figcaption>Typical FBD for a block on a rough surface.</figcaption>
-  </div>
-</main>
-
-    <aside class="card">
-      <h3>Quick Search</h3>
-      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
-      <ul id="search-results" class="search-results"></ul>
-      <hr>
-      <h3>Downloads</h3>
-      <ul>
-        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
-        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
-      </ul>
-      <p class="small">External links open in a new tab.</p>
-    </aside>
-  </div>
-
-  <footer class="site">
-    <div class="container">
-      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
-      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
-    </div>
-  </footer>
+ <footer class="site-footer">
+  <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+  <p class="contact">
+    Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+    Phone: <a href="tel:+233551234567">+233 55 123 4567</a>
+  </p>
+  <p>© <span id="year"></span> Mechanics for SHS Students</p>
+</footer>
 
   <script src="assets/script.js"></script>
+  <script>
+    document.getElementById('fBtn').addEventListener('click', e=>{
+      e.preventDefault();
+      const P=parseFloat(document.getElementById('fP').value);
+      const Q=parseFloat(document.getElementById('fQ').value);
+      const th=parseFloat(document.getElementById('fTheta').value)*Math.PI/180;
+      const R=Math.sqrt(P*P+Q*Q+2*P*Q*Math.cos(th));
+      const out=document.getElementById('fOut');
+      out.textContent=Resultant R = ${R.toFixed(2)} N;
+      out.className="quiz-result good";
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -1,89 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pulley System • Mechanics</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulley System — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.JPG">
+  <link rel="stylesheet" href="assets/style3.css" />
 </head>
-<body>
-  <header class="site">
-    <div class="container">
-      <div class="brand">
-        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
-        <div>
-          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
-          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
-        </div>
+<body data-page="pulley">
+ <header class="site-header-mechanics">
+  <div class="header-inner">
+    <img src="assets/crest.JPG" alt="UEW Logo" class="header-logo">
+    <h1 class="site-title">MECHANICS</h1>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="laws-of-motion.html">Laws</a>
+    <a href="inclined-planes.html">Inclined</a>
+    <a href="pulley-system.html">Pulley</a>
+    <a href="forces.html">Forces</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="videos.html">Videos</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+  <main class="card fade-in">
+    <h2>Pulley Systems</h2>
+    <p>Pulleys reduce effort or change direction of forces. The simplest models are studied in mechanics:
+      fixed pulleys, movable pulleys, and the Atwood machine.</p>
+
+    <h3>1) Fixed Pulley</h3>
+    <p>Changes direction of force; mechanical advantage = 1.</p>
+
+    <h3>2) Movable Pulley</h3>
+    <p>Shares load between two ropes; mechanical advantage = 2.</p>
+
+    <h3>3) Atwood Machine</h3>
+    <p>Two masses m₁ and m₂ connected by a string over a frictionless pulley.
+       Tension T is the same throughout the rope.</p>
+<div class="card">
+  <h2>THE PULLEY SYSTEM</h2>
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="assets/pulley1.jpg" alt="pulley Example 1">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/pulley2.jpg" alt="pulley Example 2">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/pulley3.jpg" alt="pulley Example 3">
+    </div>
+
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</div>
+    <h4>Equations</h4>
+    <ul>
+      <li>Acceleration: <code>a = (m₂ − m₁)g / (m₁ + m₂)</code></li>
+      <li>Tension: <code>T = 2m₁m₂g / (m₁ + m₂)</code></li>
+    </ul>
+
+    <div class="grid-2">
+      <div class="card"><strong>Example:</strong><br>
+        m₁ = 3 kg, m₂ = 5 kg → a = 2.45 m/s², T ≈ 36.75 N
+      </div>
+      <div class="card"><strong>Check:</strong><br>
+        If m₁ = m₂, then a = 0 (equilibrium).
       </div>
     </div>
-  </header>
 
-  <nav class="top">
-    <div class="container navwrap">
-      <a href="index.html">Home</a>
-      <a href="laws-of-motion.html">Laws of Motion</a>
-      <a href="inclined-planes.html">Inclined Planes</a>
-      <a href="pulley-system.html">Pulley System</a>
-      <a href="forces.html">Forces</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="assignments.html">Assignments</a>
-      <a href="login.html">Login</a>
+    <h3>Interactive Calculator (Atwood Machine)</h3>
+    <div class="card">
+      <label>m₁ (kg): <input id="pM1" type="number" value="3"></label>
+      <label>m₂ (kg): <input id="pM2" type="number" value="5"></label>
+      <button class="btn" id="pBtn">Compute a and T</button>
+      <div id="pOut" class="quiz-result"></div>
     </div>
-  </nav>
 
-  <div class="container layout">
+    <h3>Video Lesson</h3>
+    <video controls width="55%">
+      <source src="assets/videos/pulvid.mp4" type="video/mp4">
+      
+    </video>
     
-<main class="card">
-  <h2>Pulley System (Atwood Machine)</h2>
-  <p>Consider two masses <em>m₁</em> and <em>m₂</em> connected by a light inextensible string over a smooth pulley. The system accelerates with</p>
-  <p class="notice"><strong>a = (m₂ − m₁)g / (m₁ + m₂)</strong> and tension <strong>T = 2m₁m₂g / (m₁ + m₂)</strong>.</p>
+  </main>
 
-  <div class="grid-2">
-    <div class="card">
-      <h3>Assumptions</h3>
-      <ul>
-        <li>String is light and inextensible.</li>
-        <li>Pulley and axle are smooth (no friction).</li>
-        <li>Masses move in straight lines with common magnitude of acceleration.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Example</h3>
-      <p>If m₁ = 2 kg and m₂ = 6 kg, then</p>
-      <p><code class="inline">a = (6−2)×9.8 / (6+2) = 4×9.8/8 = 4.9 m/s²</code></p>
-    </div>
-  </div>
-
-  <div class="figure">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Atwood_Machine.svg/640px-Atwood_Machine.svg.png" alt="Pulley diagram">
-    <figcaption>Atwood machine with masses m₁ and m₂.</figcaption>
-  </div>
-</main>
-
-    <aside class="card">
-      <h3>Quick Search</h3>
-      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
-      <ul id="search-results" class="search-results"></ul>
-      <hr>
-      <h3>Downloads</h3>
-      <ul>
-        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
-        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
-      </ul>
-      <p class="small">External links open in a new tab.</p>
-    </aside>
-  </div>
-
-  <footer class="site">
-    <div class="container">
-      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
-      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
-    </div>
-  </footer>
+  <footer class="site-footer">
+  <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+  <p class="contact">
+    Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+    Phone: <a href="tel:+233551234567">+233 55 123 4567</a>
+  </p>
+  <p>© <span id="year"></span> Mechanics for SHS Students</p>
+</footer>
 
   <script src="assets/script.js"></script>
+  <script>
+    document.getElementById('pBtn').addEventListener('click', e=>{
+      e.preventDefault();
+      const g=9.8;
+      const m1=parseFloat(document.getElementById('pM1').value);
+      const m2=parseFloat(document.getElementById('pM2').value);
+      const out=document.getElementById('pOut');
+      if(m1>0 && m2>0){
+        const a=((m2-m1)*g)/(m1+m2);
+        const T=(2*m1*m2*g)/(m1+m2);
+        out.innerHTML=a = ${a.toFixed(2)} m/s²<br>T = ${T.toFixed(2)} N;
+        out.className="quiz-result good";
+      } else {
+        out.textContent="Enter valid masses > 0";
+        out.className="quiz-result bad";
+      }
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>

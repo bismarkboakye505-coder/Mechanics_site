@@ -1,83 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Laws of Motion • Mechanics</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laws of Motion — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.JPG">
+  <link rel="stylesheet" href="assets/style3.css" />
 </head>
-<body>
-  <header class="site">
-    <div class="container">
-      <div class="brand">
-        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
-        <div>
-          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
-          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="top">
-    <div class="container navwrap">
-      <a href="index.html">Home</a>
-      <a href="laws-of-motion.html">Laws of Motion</a>
-      <a href="inclined-planes.html">Inclined Planes</a>
-      <a href="pulley-system.html">Pulley System</a>
-      <a href="forces.html">Forces</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="assignments.html">Assignments</a>
-      <a href="login.html">Login</a>
-    </div>
+<body data-page="laws">
+  <header class="site-header-mechanics">
+  <div class="header-inner">
+    <img src="assets/crest.JPG" alt="UEW Logo" class="header-logo">
+    <h1 class="site-title">MECHANICS</h1>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="laws-of-motion.html">Laws</a>
+    <a href="inclined-planes.html">Inclined</a>
+    <a href="pulley-system.html">Pulley</a>
+    <a href="forces.html">Forces</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="videos.html">Videos</a>
+    <a href="login.html">Login</a>
   </nav>
+</header>
 
-  <div class="container layout">
-    
-<main class="card">
-  <h2>Newton’s Laws of Motion</h2>
-  <p>Mechanics studies how and why objects move. Newton’s three laws describe the relationship between forces and motion.</p>
+  <main class="card fade-in">
+    <h2>Laws of Motion</h2>
+    <p>Newton’s laws describe how forces affect motion. They connect cause (forces) and effect (motion) and are foundational in mechanics.</p>
 
-  <h3 id="first-law">First Law (Inertia)</h3>
-  <p>An object remains at rest or moves with constant velocity unless acted upon by a net external force.</p>
+    <h3>1) First Law (Inertia)</h3>
+    <p>A body continues in a state of rest or uniform motion in a straight line unless compelled to change by an external force.</p>
+    <ul>
+      <li>Zero net force ⇒ zero acceleration.</li>
+      <li>Examples: passenger lurching in a bus, a puck gliding on ice.</li>
+    </ul>
+    <div class="notice"><strong>Example:</strong> A 2 kg cart moving at 3 m/s with zero net force continues at 3 m/s.</div>
 
-  <h3 id="second-law">Second Law (F = ma)</h3>
-  <p>The acceleration <em>a</em> of a body is proportional to the net force <em>F</em> and inversely proportional to its mass <em>m</em>: <strong>F = ma</strong>.</p>
-
-  <div class="figure">
-    <img src="https://via.placeholder.com/800x350.png?text=Free-Body+Diagram" alt="Free-body diagram">
-    <figcaption>Free-body diagram showing forces acting on a block.</figcaption>
-  </div>
-
-  <h3 id="third-law">Third Law (Action–Reaction)</h3>
-  <p>For every action there is an equal and opposite reaction. Forces occur in pairs on different bodies.</p>
-
-  <div class="notice">Example: A 5 kg cart is pulled with a net force of 10 N. Its acceleration is <strong>a = F/m = 2 m/s²</strong>.</div>
-</main>
-
-    <aside class="card">
-      <h3>Quick Search</h3>
-      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
-      <ul id="search-results" class="search-results"></ul>
-      <hr>
-      <h3>Downloads</h3>
-      <ul>
-        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
-        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
-      </ul>
-      <p class="small">External links open in a new tab.</p>
-    </aside>
-  </div>
-
-  <footer class="site">
-    <div class="container">
-      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
-      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
+    <h3>2) Second Law (F = ma)</h3>
+    <p>Acceleration is proportional to net force and inversely proportional to mass. <code>F = ma</code>, N = kg·m/s².</p>
+    <div class="grid-2">
+      <div class="card"><strong>Example:</strong> 5 kg block, F = 20 N → a = 4 m/s²</div>
+      <div class="card"><strong>Example:</strong> Car m = 1200 kg, F = 3000 N → a = 2.5 m/s²</div>
     </div>
-  </footer>
+
+    <h3>3) Third Law (Action–Reaction)</h3>
+    <p>Every action has an equal and opposite reaction. Forces occur in pairs, acting on different bodies.</p>
+    <ul>
+      <li>Walking: foot pushes ground back, ground pushes forward.</li>
+      <li>Rocket: gas pushed backward, rocket forward.</li>
+    </ul>
+<div class="card">
+  <h2>LAWS OF MOTION</h2>
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="assets/law1.jpg" alt="laws Example 1">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/law2.jpg" alt="laws Example 2">
+    </div>
+
+    <div class="slide fade">
+      <img src="assets/law3.jpg" alt="laws Example 3">
+    </div>
+
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</div>
+    <h3>Summary</h3>
+    <table class="table">
+      <tr><th>Law</th><th>Statement</th><th>Equation</th><th>Example</th></tr>
+      <tr><td>1st</td><td>Uniform motion unless net force</td><td>—</td><td>Puck on ice</td></tr>
+      <tr><td>2nd</td><td>Acceleration ∝ force, 1/mass</td><td>F = ma</td><td>Car speeding up</td></tr>
+      <tr><td>3rd</td><td>Equal & opposite force pairs</td><td>—</td><td>Rocket launch</td></tr>
+    </table>
+
+    <h3>Interactive Demo</h3>
+    <div class="card">
+      <label>Force (N): <input id="lomF" type="number" value="10"></label>
+      <label>Mass (kg): <input id="lomM" type="number" value="5"></label>
+      <button class="btn" id="lomBtn">Compute a</button>
+      <div id="lomOut" class="quiz-result"></div>
+    </div>
+
+     <h3>Video Lesson</h3>
+    <video controls width="55%">
+      <source src="assets/videos/lawvid.mp4" type="video/mp4">
+      
+    </video>
+    
+  </main>
+
+  <footer class="site-footer">
+  <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+  <p class="contact">
+    Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+    Phone: <a href="tel:+233551234567">+233 55 123 4567</a>
+  </p>
+  <p>© <span id="year"></span> Mechanics for SHS Students</p>
+</footer>
 
   <script src="assets/script.js"></script>
+  <script>
+    // Quick inline calculator script
+    document.getElementById('lomBtn').addEventListener('click', e=>{
+      e.preventDefault();
+      const f = parseFloat(document.getElementById('lomF').value);
+      const m = parseFloat(document.getElementById('lomM').value);
+      const out = document.getElementById('lomOut');
+      if(m>0){
+        const a = f/m;
+        out.textContent = a = ${a.toFixed(2)} m/s²;
+        out.className = 'quiz-result good';
+      } else {
+        out.textContent = 'Mass must be > 0';
+        out.className = 'quiz-result bad';
+      }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

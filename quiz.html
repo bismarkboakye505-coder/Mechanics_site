@@ -1,104 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz • Mechanics</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.JPG">
+  <link rel="stylesheet" href="assets/style3.css" />
 </head>
-<body>
-  <header class="site">
-    <div class="container">
-      <div class="brand">
-        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
-        <div>
-          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
-          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="top">
-    <div class="container navwrap">
-      <a href="index.html">Home</a>
-      <a href="laws-of-motion.html">Laws of Motion</a>
-      <a href="inclined-planes.html">Inclined Planes</a>
-      <a href="pulley-system.html">Pulley System</a>
-      <a href="forces.html">Forces</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="assignments.html">Assignments</a>
-      <a href="login.html">Login</a>
-    </div>
-  </nav>
-
-  <div class="container layout">
-    
-<main class="card">
-  <h2>Quick Quiz (5 Questions)</h2>
-  <p>Answer the questions below and click <em>Grade Quiz</em> to see your score instantly.</p>
-
-  <form id="quiz-form">
-    <fieldset class="row">
-      <legend>Q1. Which Newton law links net force to acceleration?</legend>
-      <label><input type="radio" name="q1" value="1st"> First law</label>
-      <label><input type="radio" name="q1" value="2nd"> Second law</label>
-      <label><input type="radio" name="q1" value="3rd"> Third law</label>
-    </fieldset>
-
-    <div class="row">
-      <label>Q2. On a smooth 30° incline, what is <em>sin 30° × g</em> (g = 9.8)? Enter the numerical value of acceleration (m/s²).</label>
-      <input type="number" step="0.1" name="q2" placeholder="e.g., 4.9">
-    </div>
-
-    <fieldset class="row">
-      <legend>Q3. In an Atwood machine, which forces act on each hanging mass? (Select all that apply.)</legend>
-      <label><input type="checkbox" name="q3" value="tension"> Tension</label>
-      <label><input type="checkbox" name="q3" value="spring"> Spring force</label>
-      <label><input type="checkbox" name="q3" value="weight"> Weight</label>
-      <label><input type="checkbox" name="q3" value="drag"> Air drag (assume negligible)</label>
-    </fieldset>
-
-    <fieldset class="row">
-      <legend>Q4. For a block on a rough incline moving up-slope, the friction acts…</legend>
-      <label><input type="radio" name="q4" value="up-slope"> up the slope</label>
-      <label><input type="radio" name="q4" value="down-slope"> down the slope</label>
-    </fieldset>
-
-    <fieldset class="row">
-      <legend>Q5. True or False: Action and reaction forces act on the same body.</legend>
-      <label><input type="radio" name="q5" value="true"> False</label>
-      <label><input type="radio" name="q5" value="false"> True</label>
-    </fieldset>
-
-    <button class="btn">Grade Quiz</button>
-    <div id="quiz-result" class="quiz-result"></div>
-  </form>
-</main>
-
-    <aside class="card">
-      <h3>Quick Search</h3>
-      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
-      <ul id="search-results" class="search-results"></ul>
-      <hr>
-      <h3>Downloads</h3>
-      <ul>
-        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
-        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
-      </ul>
-      <p class="small">External links open in a new tab.</p>
-    </aside>
+<body data-page="quiz">
+  <header class="site-header-mechanics">
+  <div class="header-inner">
+    <img src="assets/crest.JPG" alt="UEW Logo" class="header-logo">
+    <h1 class="site-title">MECHANICS</h1>
   </div>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="laws-of-motion.html">Laws</a>
+    <a href="inclined-planes.html">Inclined</a>
+    <a href="pulley-system.html">Pulley</a>
+    <a href="forces.html">Forces</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="videos.html">Videos</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
 
-  <footer class="site">
-    <div class="container">
-      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
-      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
-    </div>
-  </footer>
+  <main class="card fade-in">
+    <h2>Quiz</h2>
+    <p>Answer the following multiple-choice questions. Click <strong>Submit</strong> to see your score instantly.</p>
+
+    <form id="quizForm">
+      <div class="quiz-question">
+        <p>1) Newton’s First Law is also called:</p>
+        <label><input type="radio" name="q1" value="a"> Law of Action–Reaction</label><br>
+        <label><input type="radio" name="q1" value="b"> Law of Inertia</label><br>
+        <label><input type="radio" name="q1" value="c"> Law of Energy</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>2) A block slides on a smooth inclined plane of angle θ. Its acceleration is:</p>
+        <label><input type="radio" name="q2" value="a"> g cosθ</label><br>
+        <label><input type="radio" name="q2" value="b"> g sinθ</label><br>
+        <label><input type="radio" name="q2" value="c"> μg cosθ</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>3) In an Atwood machine, if m₁ = m₂, then acceleration is:</p>
+        <label><input type="radio" name="q3" value="a"> g</label><br>
+        <label><input type="radio" name="q3" value="b"> 0</label><br>
+        <label><input type="radio" name="q3" value="c"> 9.8 m/s²</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>4) Which of these is a <em>non-contact force</em>?</p>
+        <label><input type="radio" name="q4" value="a"> Friction</label><br>
+        <label><input type="radio" name="q4" value="b"> Normal Reaction</label><br>
+        <label><input type="radio" name="q4" value="c"> Gravitational Force</label>
+      </div>
+
+      <div class="quiz-question">
+        <p>5) The SI unit of force is:</p>
+        <label><input type="radio" name="q5" value="a"> Newton (N)</label><br>
+        <label><input type="radio" name="q5" value="b"> Joule (J)</label><br>
+        <label><input type="radio" name="q5" value="c"> Watt (W)</label>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div id="quizResult" class="quiz-result"></div>
+  </main>
+
+ <footer class="site-footer">
+  <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+  <p class="contact">
+    Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+    Phone: <a href="tel:+233551234567">+233 55 123 4567</a>
+  </p>
+  <p>© <span id="year"></span> Mechanics for SHS Students</p>
+</footer>
 
   <script src="assets/script.js"></script>
+  <script>
+    const answers = {q1:"b", q2:"b", q3:"b", q4:"c", q5:"a"};
+    document.getElementById('quizForm').addEventListener('submit', e=>{
+      e.preventDefault();
+      let score = 0;
+      let total = Object.keys(answers).length;
+      for (let q in answers){
+        const checked = document.querySelector(input[name=${q}]:checked);
+        if(checked && checked.value === answers[q]) score++;
+      }
+      const result = document.getElementById('quizResult');
+      result.textContent = You scored ${score} / ${total};
+      result.className = (score >= 3) ? "quiz-result good" : "quiz-result bad";
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

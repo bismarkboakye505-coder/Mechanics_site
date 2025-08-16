@@ -1,86 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignments • Mechanics</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a4dcc'/><text x='50' y='62' font-size='66' text-anchor='middle' fill='white'>M</text></svg>">
-  <link rel="stylesheet" href="assets/style.css">
-  <meta name="description" content="Senior High School Mechanics resource: Laws of Motion, Inclined Planes, Pulley System, Forces.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignments — Mechanics for SHS Students</title>
+  <link rel="icon" href="assets/crest.JPG">
+  <link rel="stylesheet" href="assets/style3.css" />
 </head>
-<body>
-  <header class="site">
-    <div class="container">
-      <div class="brand">
-        <img class="logo" src="https://via.placeholder.com/112x112.png?text=MECH" alt="Mechanics logo">
-        <div>
-          <h1>Mechanics — Interactive Web Resource<br><span class="small">By Bismark Owiredu Boakye (Index: 5230110265)</span></h1>
-          <p>Topic focus: Laws of Motion • Inclined Planes • Pulley System • Forces</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="top">
-    <div class="container navwrap">
-      <a href="index.html">Home</a>
-      <a href="laws-of-motion.html">Laws of Motion</a>
-      <a href="inclined-planes.html">Inclined Planes</a>
-      <a href="pulley-system.html">Pulley System</a>
-      <a href="forces.html">Forces</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="assignments.html">Assignments</a>
-      <a href="login.html">Login</a>
-    </div>
-  </nav>
-
-  <div class="container layout">
-    
-<main class="card">
-  <h2>Assignments</h2>
-  <ol>
-    <li><strong>Incline Problem:</strong> A 6 kg block is on a 25° incline (μ = 0.2). Find the acceleration and the frictional force.</li>
-    <li><strong>Pulley Setup:</strong> For an Atwood machine with 3 kg and 5 kg, compute the acceleration and tension.</li>
-    <li><strong>FBD Practice:</strong> Draw a free-body diagram for a block being pushed along a rough horizontal surface at constant speed.</li>
-  </ol>
-
-  <h3>Submit Your Work</h3>
-  <form>
-    <div class="row"><label>Full name</label><input type="text" required></div>
-    <div class="row"><label>Class</label>
-      <select>
-        <option>SHS 1</option>
-        <option>SHS 2</option>
-        <option>SHS 3</option>
-      </select>
-    </div>
-    <div class="row"><label>Upload your solution (PDF or image)</label><input type="file" accept=".pdf,.png,.jpg,.jpeg"></div>
-    <div class="row"><label>Comments</label><textarea rows="4" placeholder="Any notes for the teacher"></textarea></div>
-    <div class="row"><button class="btn">Submit (demo)</button> <span class="small">This is a demo form; uploading requires a server.</span></div>
-  </form>
-</main>
-
-    <aside class="card">
-      <h3>Quick Search</h3>
-      <input id="site-search" type="search" placeholder="Search the site (e.g. friction)">
-      <ul id="search-results" class="search-results"></ul>
-      <hr>
-      <h3>Downloads</h3>
-      <ul>
-        <li><a href="https://www.ghs-moe.org" target="_blank" rel="noopener">Ghana SHS Curriculum</a></li>
-        <li><a href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener">Khan Academy Physics</a></li>
-      </ul>
-      <p class="small">External links open in a new tab.</p>
-    </aside>
+<body data-page="assignments">
+  <header class="site-header-mechanics">
+  <div class="header-inner">
+    <img src="assets/crest.JPG" alt="UEW Logo" class="header-logo">
+    <h1 class="site-title">MECHANICS</h1>
   </div>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="laws-of-motion.html">Laws</a>
+    <a href="inclined-planes.html">Inclined</a>
+    <a href="pulley-system.html">Pulley</a>
+    <a href="forces.html">Forces</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="videos.html">Videos</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
 
-  <footer class="site">
-    <div class="container">
-      <div>© 2025 Mechanics Resource • Author: Bismark Owiredu Boakye (Index: 5230110265)</div>
-      <div>Built for ICTD 361 — Web Technologies for Mathematics Teacher</div>
-    </div>
-  </footer>
+  <main class="card fade-in">
+    <h2>Assignments</h2>
+    <p>Answer the following questions. Auto-grading works for the short questions. For extended tasks, use the upload field.</p>
+
+    <form id="assignForm">
+      <div class="quiz-question">
+        <p>1) State Newton’s Third Law of Motion.</p>
+        <input type="text" name="a1" placeholder="Type your answer here">
+      </div>
+
+      <div class="quiz-question">
+        <p>2) A 4 kg block is pulled with a force of 20 N horizontally. Find its acceleration (assume smooth surface).</p>
+        <input type="text" name="a2" placeholder="Type your answer here">
+      </div>
+
+      <div class="quiz-question">
+        <p>3) Identify TWO non-contact forces.</p>
+        <input type="text" name="a3" placeholder="Type your answer here">
+      </div>
+
+      <button type="submit" class="btn">Check Answers</button>
+    </form>
+
+    <div id="assignResult" class="quiz-result"></div>
+
+    <h3>Extended Task (Upload)</h3>
+    <p>Write an essay: “Applications of Newton’s Laws in Everyday Life”. Upload your file below:</p>
+    <input type="file" id="uploadField" />
+    <p class="muted small">File uploads are only stored locally for demo purposes.</p>
+  </main>
+
+   <footer class="site-footer">
+  <p class="author">Bismark Owiredu Boakye — Index: 5230110265</p>
+  <p class="contact">
+    Email: <a href="mailto:bismarkboakye505@gmail.com">bismarkboakye505@gmail.com</a> | 
+    Phone: <a href="tel:+233257409913">+233 25 740 9913</a>
+  </p>
+  <p>© <span id="year"></span> Mechanics for SHS Students</p>
+</footer>
 
   <script src="assets/script.js"></script>
+  <script>
+    const keys = {
+      a1: ["action","reaction","equal","opposite"],
+      a2: ["5","5.0"], // 20N / 4kg = 5 m/s²
+      a3: ["gravitational","gravity","electrostatic","magnetic"]
+    };
+
+    document.getElementById('assignForm').addEventListener('submit', e=>{
+      e.preventDefault();
+      let score=0, total=3;
+      const form = new FormData(e.target);
+      // Question 1
+      const ans1=form.get("a1").toLowerCase();
+      if(keys.a1.every(k=>ans1.includes(k))) score++;
+      // Question 2
+      const ans2=form.get("a2").toLowerCase();
+      if(keys.a2.some(k=>ans2.includes(k))) score++;
+      // Question 3
+      const ans3=form.get("a3").toLowerCase();
+      let c=0;
+      for(const f of keys.a3){ if(ans3.includes(f)) c++; }
+      if(c>=2) score++;
+      // Output
+      const result=document.getElementById("assignResult");
+      result.textContent=You scored ${score} / ${total};
+      result.className=(score>=2)?"quiz-result good":"quiz-result bad";
+    });
+
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
